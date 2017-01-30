@@ -42,12 +42,9 @@ def get_leaderboard_entries(segment_id):
 
 
 def get_entrie_score(entrie):
-    rank = entrie['rank']
     speed = entrie['distance'] / entrie['moving_time']
-    average_watts = entrie['average_watts'] or 1
     average_hr = entrie['average_hr'] or 1
-    avarage_hw = average_hr / average_watts
-    return int(sum((speed, rank, avarage_hw)))
+    return int(sum((speed, avarage_hr)))
 
 
 def leaderboard_data_handler():
