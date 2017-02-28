@@ -28,7 +28,7 @@ def leaderboard_intersection_view():
     return jsonify(data)
 
 
-@app.route("/leaderboard-ontersection-scores")
+@app.route("/leaderboard-intersection-scores")
 def leaderboard_intersection_score_view():
     data = get_leaderboard_intersection_scores()
     return jsonify(data)
