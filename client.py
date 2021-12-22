@@ -43,8 +43,8 @@ def get_leaderboard_entries(segment_id):
 
 def get_entrie_score(entrie):
     speed = entrie['distance'] / entrie['moving_time']
-    average_hr = entrie['average_hr'] or 1
-    return int(sum((speed, avarage_hr)))
+    average_hourly = entrie['average_hr'] or 1
+    return int(sum((speed, average_hourly)))
 
 
 def leaderboard_data_handler():

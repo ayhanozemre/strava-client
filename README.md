@@ -4,8 +4,9 @@
 This is a simple Strava client. Currently it has two views which uses the leaderboards data.
 
 # How does it work ?
+  - create strava application
   - pip install -r requirements.txt
-  - Create strava application for  SECRET_KEY in settings.py
+  - set the secret key of your application in env to the variable STRAVA_SECRET_KEY
   - python manage.py
 
 # Endpoints
